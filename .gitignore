@@ -13,3 +13,24 @@
 .externalNativeBuild
 .cxx
 local.properties
+# Archivos de configuración de IDE (Android Studio / IntelliJ)
+.gradle
+.idea/
+local.properties
+*.iml
+
+# Archivos generados por el sistema
+.DS_Store
+Thumbs.db
+
+# Logs y archivos temporales
+*.log
+*.old
+.kotlin/
+
+# Archivos de Build (¡Muy importante!)
+build/
+
+# Archivos de Keystore (¡NO SUBIR!)
+*.jks
+*.keystore
