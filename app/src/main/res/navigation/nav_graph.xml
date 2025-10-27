@@ -1,0 +1,50 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.stylematch.ui.menu.MainMenuFragment"
+        android:label="StyleMatch"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_mainMenuFragment_to_faceAnalysisFragment_camera"
+            app:destination="@id/faceAnalysisFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_faceAnalysisFragment_gallery"
+            app:destination="@id/faceAnalysisFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_hairstylesFragment"
+            app:destination="@id/hairstylesFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/faceAnalysisFragment"
+        android:name="com.example.stylematch.ui.analysis.FaceAnalysisFragment"
+        android:label="Análisis Facial"
+        tools:layout="@layout/fragment_face_analysis">
+        <argument
+            android:name="image_uri"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hairstylesFragment"
+        android:name="com.example.stylematch.ui.hairstyle.HairstylesFragment"
+        android:label="Galería de Peinados"
+        tools:layout="@layout/fragment_hairstyles" />
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.stylematch.ui.favorites.FavoritesFragment"
+        android:label="Mis Peinados Favoritos"
+        tools:layout="@layout/fragment_favorites" />
+
+</navigation>

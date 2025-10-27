@@ -1,0 +1,103 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"> <ImageView
+        android:id="@+id/ivFavHairstyleImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagen del peinado favorito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:srcCompat="@drawable/ic_placeholder_image"
+        android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/tvFavHairstyleName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary"
+            app:layout_constraintStart_toEndOf="@id/ivFavHairstyleImage" app:layout_constraintTop_toTopOf="@id/ivFavHairstyleImage" app:layout_constraintEnd_toStartOf="@+id/btnDeleteFavorite"
+            tools:text="Peinado Favorito Largo" />
+
+        <ImageButton
+            android:id="@+id/btnDeleteFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Eliminar de favoritos"
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_delete"
+            app:tint="?attr/colorError"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvFavHairstyleName"
+            app:layout_constraintBottom_toBottomOf="@id/tvFavHairstyleName" />
+
+        <TextView
+            android:id="@+id/tvFavFaceShapeAtRecommendation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" android:layout_marginTop="4dp"
+            android:textColor="?android:attr/textColorSecondary"
+            app:layout_constraintTop_toBottomOf="@id/tvFavHairstyleName"
+            app:layout_constraintStart_toEndOf="@id/ivFavHairstyleImage" app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Recomendado para forma de rostro: OVAL" />
+
+        <TextView
+            android:id="@+id/tvFavConfidence"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" android:textColor="@color/success"
+            android:layout_marginTop="2dp"
+            app:layout_constraintTop_toBottomOf="@id/tvFavFaceShapeAtRecommendation"
+            app:layout_constraintStart_toEndOf="@id/ivFavHairstyleImage" app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Confianza: 85%" />
+
+        <TextView
+            android:id="@+id/tvFavMainReason"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:textSize="13sp" android:textColor="?android:attr/textColorSecondary"
+            app:layout_constraintTop_toBottomOf="@id/tvFavConfidence"
+            app:layout_constraintStart_toEndOf="@id/ivFavHairstyleImage" app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Razón principal: Ideal para suavizar la frente."
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/tvFavDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="13sp" android:textStyle="italic"
+            android:textColor="?android:attr/textColorSecondary"
+            app:layout_constraintTop_toBottomOf="@id/tvFavMainReason"
+            app:layout_constraintStart_toEndOf="@id/ivFavHairstyleImage" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvFavTimestamp"
+            tools:text="Descripción detallada del peinado con sus características y atributos."
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvFavTimestamp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:textSize="11sp" android:textColor="?attr/textColorTertiary"
+            app:layout_constraintTop_toBottomOf="@id/tvFavMainReason"
+            app:layout_constraintBottom_toBottomOf="@id/ivFavHairstyleImage" app:layout_constraintStart_toEndOf="@id/ivFavHairstyleImage" app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Guardado: hace 2 días" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

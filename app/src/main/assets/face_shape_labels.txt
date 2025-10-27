@@ -1,0 +1,5 @@
+Oval
+Round
+Square
+Heart
+Diamond

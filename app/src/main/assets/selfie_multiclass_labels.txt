@@ -1,0 +1,10 @@
+background
+hair
+face-skin
+eyes
+eyebrows
+nose
+mouth
+lips
+neck
+clothes

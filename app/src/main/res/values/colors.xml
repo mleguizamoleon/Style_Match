@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores base del tema -->
+    <color name="primary">#FF6B6B</color>
+    <color name="primaryDark">#E84545</color>
+    <color name="accent">#4ECDC4</color>
+    
+    <!-- Colores complementarios -->
+    <color name="secondary">#95E1D3</color>
+    <color name="secondaryDark">#76C2B4</color>
+    
+    <!-- Colores de fondo -->
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="surfaceColor">#F8F9FA</color>
+    <color name="cardBackground">#FFFFFF</color>
+    
+    <!-- Colores de texto -->
+    <color name="textColorPrimary">#2D3436</color>
+    <color name="textColorSecondary">#636E72</color>
+    <color name="textColorTertiary">#B2BEC3</color>
+    
+    <!-- Colores de estado -->
+    <color name="success">#00B894</color>
+    <color name="error">#FF7675</color>
+    <color name="warning">#FDCB6E</color>
+    
+    <!-- Colores del sistema -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    
+    <!-- Legacy colors for backward compatibility -->
+    <color name="purple_200">#FF6B6B</color>
+    <color name="purple_500">#FF6B6B</color>
+    <color name="purple_700">#E84545</color>
+    <color name="teal_200">#4ECDC4</color>
+    <color name="teal_700">#76C2B4</color>
+</resources>

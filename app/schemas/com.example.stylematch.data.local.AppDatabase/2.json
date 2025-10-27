@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "2e580f142e14bd3a06689cdb2e0f0778",
+    "entities": [
+      {
+        "tableName": "favorite_hairstyles",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`hairstyleName` TEXT NOT NULL, `description` TEXT NOT NULL, `mainReason` TEXT NOT NULL, `confidenceAtRecommendation` REAL NOT NULL, `faceShapeAtRecommendation` TEXT NOT NULL, `timestamp` INTEGER NOT NULL, `imageUrl` TEXT, PRIMARY KEY(`hairstyleName`))",
+        "fields": [
+          {
+            "fieldPath": "hairstyleName",
+            "columnName": "hairstyleName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mainReason",
+            "columnName": "mainReason",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "confidenceAtRecommendation",
+            "columnName": "confidenceAtRecommendation",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "faceShapeAtRecommendation",
+            "columnName": "faceShapeAtRecommendation",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "imageUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "hairstyleName"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '2e580f142e14bd3a06689cdb2e0f0778')"
+    ]
+  }
+}

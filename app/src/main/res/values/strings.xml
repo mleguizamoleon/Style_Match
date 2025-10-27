@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">StyleMatch</string>
+    <string name="title_activity_main">StyleMatch</string>
+
+    <string name="permission_camera_rationale">Camera permission is needed for real-time facial analysis.</string>
+    <string name="permission_storage_rationale">Storage permission is needed to select images from gallery.</string>
+    <string name="permissions_denied">Permissions denied. Some features may not be available.</string>
+    <string name="grant_permission">Grant Permission</string>
+
+    <string name="label_gallery">From Gallery</string>
+    <string name="label_camera">Use Camera</string>
+    <string name="analyzing_image">Analyzing image...</string>
+    <string name="no_face_detected">No face detected in the image.</string>
+    <string name="error_processing_image">Error processing image.</string>
+    <string name="recommended_hairstyles">Recommended Hairstyles</string>
+    <string name="loading_hairstyles">Loading hairstyles...</string>
+    <string name="no_hairstyles_found">No hairstyles found.</string>
+    <string name="try_again">Try Again</string>
+
+    <string name="pexels_photographer_prefix">Photo by: %s</string>
+
+    <!-- Strings para la cámara -->
+    <string name="switch_camera">Cambiar cámara</string>
+    <string name="capture_photo">Tomar foto</string>
+    <string name="open_gallery">Abrir galería</string>
+    
+    <!-- Strings para las recomendaciones -->
+    <string name="reference_photo">Foto de referencia</string>
+    <string name="face_shape_label">Forma del rostro</string>
+    <string name="symmetry_label">Simetría</string>
+    <string name="features_label">Características</string>
+
+    <string name="confidence_format">%.0f%% compatible</string>
+</resources>
